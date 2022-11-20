@@ -128,7 +128,7 @@ namespace FSVE
 
         protected void CreateOutputTexture()
         {
-            volume_output = new RenderTexture(sim_params.width, sim_params.height, sim_params.depth)
+            volume_output = new RenderTexture(sim_params.width, sim_params.height, 0)
             {
                 dimension = UnityEngine.Rendering.TextureDimension.Tex3D,// Is a 3d texture
                 volumeDepth = sim_params.depth,

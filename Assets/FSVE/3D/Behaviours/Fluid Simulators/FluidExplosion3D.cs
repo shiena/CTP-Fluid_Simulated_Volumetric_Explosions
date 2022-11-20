@@ -59,7 +59,7 @@ namespace FSVE
 
         private void CreateCustomResolutionOutputTexture()
         {
-            custom_volume_output = new RenderTexture(output_resolution.x, output_resolution.y, output_resolution.z)
+            custom_volume_output = new RenderTexture(output_resolution.x, output_resolution.y, 0)
             {
                 dimension = UnityEngine.Rendering.TextureDimension.Tex3D,// Is a 3d texture
                 volumeDepth = output_resolution.z,

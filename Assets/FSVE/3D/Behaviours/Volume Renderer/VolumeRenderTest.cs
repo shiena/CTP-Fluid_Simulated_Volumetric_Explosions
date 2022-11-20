@@ -21,7 +21,7 @@ namespace FSVE.Test
             y = Mathf.ClosestPowerOfTwo((int)size.y);
             z = Mathf.ClosestPowerOfTwo((int)size.z);
 
-            texture = new RenderTexture(x, y, z)
+            texture = new RenderTexture(x, y, 0)
             {
                 dimension = UnityEngine.Rendering.TextureDimension.Tex3D,
                 volumeDepth = z,
